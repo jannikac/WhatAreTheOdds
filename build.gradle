@@ -68,6 +68,8 @@ java {
 }
 
 jar {
+	archiveBaseName="wato"
+	project.version=""
 	from("LICENSE") {
 		rename { "${it}_${project.base.archivesName.get()}"}
 	}

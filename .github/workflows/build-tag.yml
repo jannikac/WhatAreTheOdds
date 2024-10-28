@@ -7,7 +7,7 @@ name: build-tag
 on:
   push:
     tags:
-      - '*'
+      - 'v*.*.*+mc*'
 
 jobs:
   build:
@@ -39,8 +39,10 @@ jobs:
       - name: Execute Gradle build
         run: ./gradlew build
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+      - name: Rename jar
+        run: mv build/libs/wato/wato.jar wato-${{github.ref_name}}.jar
+
+      - name: Create Github release
+        uses: softprops/action-gh-release@v2
         with:
-          name: wato-artifacts
-          path: build/libs/*.jar
+          files: wato-${{github.ref_name}}.jar
