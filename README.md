@@ -39,10 +39,5 @@ the Issues section.
 
 ### Building
 
-`.jar` files are automatically built through the Github action. You can build the `.jar` by cloning the repo and
+`.jar` files are automatically built through the GitHub action. You can build the `.jar` by cloning the repo and
 running the build gradle task.
-
-## License
-
-This mod is released under the [MIT License](LICENSE), allowing for modification and redistribution. Refer to the
-license file for more details.
