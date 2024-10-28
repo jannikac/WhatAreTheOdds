@@ -40,7 +40,7 @@ jobs:
         run: ./gradlew build
 
       - name: Rename jar
-        run: mv build/libs/wato/wato.jar wato-${{github.ref_name}}.jar
+        run: mv build/libs/wato.jar wato-${{github.ref_name}}.jar
 
       - name: Create Github release
         uses: softprops/action-gh-release@v2
