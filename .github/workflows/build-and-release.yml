@@ -43,3 +43,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: build/libs/wato-${{github.ref_name}}.jar
+
+      - name: Push to modrinth
+        uses: mc-publish
+        with:
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          modrinth-id: f19Wo02n
