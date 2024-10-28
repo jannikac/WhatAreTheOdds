@@ -1,4 +1,4 @@
-package de.whataretheodds.mixin;
+package de.awaitd.wato.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "whataretheodds",
+	"id": "wato",
 	"version": "${version}",
-	"name": "WhatAreTheOdds",
+	"name": "What are the odds?",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"de.whataretheodds.WhatAreTheOdds"
+			"de.awaitd.wato.WhatAreTheOdds"
 		],
 		"client": [
-			"de.whataretheodds.WhatAreTheOddsClient"
+			"de.awaitd.wato.WhatAreTheOddsClient"
 		]
 	},
 	"mixins": [

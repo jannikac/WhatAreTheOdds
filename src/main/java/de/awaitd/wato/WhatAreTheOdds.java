@@ -1,4 +1,4 @@
-package de.whataretheodds;
+package de.awaitd.wato;
 
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.arguments.StringArgumentType;
@@ -21,7 +21,7 @@ public class WhatAreTheOdds implements ModInitializer {
     // This logger is used to write text to the console and the log file.
     // It is considered best practice to use your mod id as the logger's name.
     // That way, it's clear which mod wrote info, warnings, and errors.
-    public static final Logger LOGGER = LoggerFactory.getLogger("whataretheodds");
+    public static final Logger LOGGER = LoggerFactory.getLogger("WhatAreTheOdds");
     // Map to store ongoing challenges
     private static final ArrayList<Challenge> challenges = new ArrayList<Challenge>() {
     };
@@ -59,7 +59,7 @@ public class WhatAreTheOdds implements ModInitializer {
         // This code runs as soon as Minecraft is in a mod-load-ready state.
         // However, some things (like resources) may still be uninitialized.
         // Proceed with mild caution.
-        // Register the "/whataretheodds" command
+        // Register the "/odds" command
         ServerMessageEvents.ALLOW_CHAT_MESSAGE.register((message, sender, params) -> {
             Optional<Challenge> result = challenges.stream().filter(challenge -> challenge.challengeActive && (sender == challenge.sourcePlayer || sender == challenge.targetPlayer)).findFirst();
             if (result.isPresent()) {

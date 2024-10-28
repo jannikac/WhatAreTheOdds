@@ -1,4 +1,4 @@
-package de.whataretheodds;
+package de.awaitd.wato;
 
 import net.fabricmc.api.ClientModInitializer;
 

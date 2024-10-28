@@ -22,7 +22,7 @@ loom {
     splitEnvironmentSourceSets()
 
 	mods {
-		"whataretheodds" {
+		"wato" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
