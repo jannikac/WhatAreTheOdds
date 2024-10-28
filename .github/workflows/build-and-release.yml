@@ -45,7 +45,7 @@ jobs:
           files: build/libs/wato-${{github.ref_name}}.jar
 
       - name: Push to modrinth
-        uses: mc-publish
+        uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           modrinth-id: f19Wo02n
